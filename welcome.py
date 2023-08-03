@@ -3,6 +3,7 @@ import pandas as pd
 #import matplotlib.pyplot as plt
 #import numpy as np
 import os
+from bokeh.plotting import figure
 
 file_name_list = []
 for i in os.listdir():
@@ -20,7 +21,7 @@ x_axis = st.selectbox('select element', el_list)
 
 st.multiselect('select location', file_name_list)
 
-from bokeh.plotting import figure
+
 
 x = [1, 2, 3, 4, 5]
 y = [6, 7, 2, 4, 5]
