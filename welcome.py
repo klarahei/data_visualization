@@ -26,7 +26,7 @@ colorlist = ['red','green','pink','yellow','blue']
 p = figure(x_axis_label = 'x',y_axis_label ='y')
 for i in range(len(file_name_list)):
  df1 = pd.read_csv(file_name_list[i])
- p.circle(df1[x_axis]/10000, df1[y_axis]/10000,color=colorlist[i])
+ p.circle(df1[x_axis]/10000, df1[y_axis]/10000, color='red')
 
 #show(p)
 
