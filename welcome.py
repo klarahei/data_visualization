@@ -28,5 +28,8 @@ for i in range(len(select_data)):
  df1 = pd.read_csv(select_data[i])
  p.circle(df1[x_axis]/10000, df1[y_axis]/10000, color=colorlist[i],legend_label = labellist[i])
 
+
+p.xgrid.visible = False
+p.ygrid.visible = False
 #show(p)
 st.bokeh_chart(p, use_container_width=True)
