@@ -1,4 +1,3 @@
 pandas
 matplotlib
-numby
 bokeh == 2.4.3
