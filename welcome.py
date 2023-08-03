@@ -23,7 +23,7 @@ y_axis = st.selectbox('select y-element', el_list)
 st.multiselect('select location', file_name_list)
 #
 p = figure(x_axis_label = 'x',y_axis_label ='y')
-p.circle(df['Mg']/10000, df['Si']/10000)
+p.circle(file_name_list['Mg']/10000, df['Si']/10000)
 
 #show(p)
 
