@@ -22,10 +22,10 @@ y_axis = st.selectbox('select y-element', el_list)
 select_data = st.multiselect('select location', file_name_list)
 
 colorlist = ['red','green','pink','yellow','blue']
-p = figure(x_axis_label = x_axis + '(wt.%)',y_axis_label = y_axis + '(wt.%)', legend_label= selectdata())
+p = figure(x_axis_label = x_axis + '(wt.%)',y_axis_label = y_axis + '(wt.%)')
 for i in range(len(select_data)):
  df1 = pd.read_csv(select_data[i])
- p.circle(df1[x_axis]/10000, df1[y_axis]/10000, color=colorlist[i])
+ p.circle(df1[x_axis]/10000, df1[y_axis]/10000, color=colorlist[i],legend_label = 'beispiel')
 
 #show(p)
 st.bokeh_chart(p, use_container_width=True)
