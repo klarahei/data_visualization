@@ -1,4 +1,3 @@
-how can i modify the following code such that i can chose which element to plot in the interactive function instead of just fixed Mg and Si:
 import streamlit as st
 import pandas as pd
 #import matplotlib.pyplot as plt
