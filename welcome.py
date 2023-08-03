@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 #import matplotlib.pyplot as plt
-import numpy as np
+#import numpy as np
 import os
 
 file_name_list = []
@@ -32,4 +32,4 @@ p = figure(
 
 p.line(x, y, legend_label='Trend', line_width=2)
 
-#st.bokeh_chart(p, use_container_width=True)
+st.bokeh_chart(p, use_container_width=True)
