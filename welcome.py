@@ -12,7 +12,7 @@ for i in os.listdir():
   
 st.write(file_name_list)
 
-df = pd.read_csv('CC1-raw.csv')
+df = pd.read_csv('CC1-raw-1.csv')
 st.dataframe(df)
 
 el_list = df.columns.tolist()
