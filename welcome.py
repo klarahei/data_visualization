@@ -12,10 +12,10 @@ for i in os.listdir():
   
 st.write(file_name_list)
 
-df = pd.read_csv('Galapagos Islands.csv')
+df = pd.read_csv('CC1-raw.csv')
 st.dataframe(df)
 
-el_list = df.columns.tolist()[27:80]
+el_list = df.columns.tolist()
 x_axis = st.selectbox('select x-element', el_list)
 y_axis = st.selectbox('select y-element', el_list)
 
