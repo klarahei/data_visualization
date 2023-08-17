@@ -25,7 +25,7 @@ labellist = select_data
 colorlist = ['red','green','pink','yellow','blue','purple']
 p = figure(x_axis_label = x_axis + '(wt.%)',y_axis_label = y_axis + '(wt.%)')
 for i in range(len(select_data)):
- df1 = pd.read_csv(select_data[i])
+ df1 = pd.read_csv(select_data[i], sep='\t')
  p.circle(df1[x_axis]/10000, df1[y_axis]/10000, color=colorlist[i],legend_label = labellist[i])
 
 
