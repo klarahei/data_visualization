@@ -12,7 +12,7 @@ for i in os.listdir():
   
 st.write(file_name_list)
 
-df = pd.read_csv('CC1-raw-1.csv', sep='\r')
+df = pd.read_csv('CC1-raw-1.csv', sep=r'\s+', engine='python')
 st.dataframe(df)
 
 el_list = df.columns.tolist()
@@ -25,7 +25,7 @@ labellist = select_data
 colorlist = ['red','green','pink','yellow','blue','purple']
 p = figure(x_axis_label = x_axis + '(wt.%)',y_axis_label = y_axis + '(wt.%)')
 for i in range(len(select_data)):
- df1 = pd.read_csv(select_data[i], sep='\t')
+ df1 = pd.read_csv(select_data[i], sep=r'\s+', engine='python')
  p.circle(df1[x_axis]/10000, df1[y_axis]/10000, color=colorlist[i],legend_label = labellist[i])
 
 
