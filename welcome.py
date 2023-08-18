@@ -21,9 +21,22 @@ x_axis = st.selectbox('select x-element', el_list)
 y_axis = st.selectbox('select y-element', el_list)
 
 select_data = st.multiselect('select data', file_name_list)
+#color definition
+
+color_exp1 = [0.5 0 0.5];   % Dark purple
+color_exp2 = [0 0 1];       % Blue
+color_exp3 = [0.5 0.5 1];   % Light blue
+color_exp4 = [0.47 0.73 0.43];  % Sage green
+color_exp5 = [0.5 0.6 0.2];  % Green
+color_exp6 = [0 0.5 0.1];  % Green
+color_exp7 = [1 0.5 0.1];  % Green
+color_exp8 = [1 0.5 0.6];  % Green
+color_exp10 = [0.6 0.3 0.6];  % Green
+color_exp11 = [0.9 0.5 0.7];  % Green
+color_exp12 = [0.3 0.1 0.5];  % Green
 
 labellist = select_data
-colorlist = ['red','green','pink','yellow','blue','purple','orange']
+colorlist = [color_exp1,'green','pink','yellow','blue','purple','orange']
 p = figure(x_axis_label = x_axis + '(wt.%)',y_axis_label = y_axis + '(wt.%)')
 for i in range(len(select_data)):
  df1 = pd.read_csv(select_data[i], sep=r';')
