@@ -19,7 +19,7 @@ el_list = df.columns.tolist()
 x_axis = st.selectbox('select x-element', el_list)
 y_axis = st.selectbox('select y-element', el_list)
 
-select_data = st.multiselect('select location', file_name_list)
+select_data = st.multiselect('select data', file_name_list)
 
 labellist = select_data
 colorlist = ['red','green','pink','yellow','blue','purple','orange']
