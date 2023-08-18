@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-from bokeh.models import Rect
 #import matplotlib.pyplot as plt
 #import numpy as np
 import os
 from bokeh.plotting import figure
+from bokeh.models import Rect
 
 file_name_list = []
 for i in os.listdir():
