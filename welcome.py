@@ -34,7 +34,7 @@ p.xgrid.visible = False
 p.ygrid.visible = False
 
 # Adding outlining lines on all sides using Rect glyphs
-p.add_glyph(Rect(x='x', y='y', width='width', height='height', line_color="black", line_width=2, fill_alpha=0))
+#p.add_glyph(Rect(x='x', y='y', width='width', height='height', line_color="black", line_width=2, fill_alpha=0))
 
 #show(p)
 st.bokeh_chart(p, use_container_width=True)
