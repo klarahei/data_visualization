@@ -32,12 +32,7 @@ for i in range(len(select_data)):
 p.xgrid.visible = False
 p.ygrid.visible = False
 
-# Adding outlining lines on all sides
-p.axis.minor_tick_in = -3
-p.axis.minor_tick_out = 6
-p.xaxis.axis_line_width = 2
-p.xaxis.axis_line_color = "black"
-p.yaxis.axis_line_width = 2
-p.yaxis.axis_line_color = "black"
+# Adding outlining lines on all sides using Rect glyphs
+p.add_glyph(Rect(x=0, y=0, width=1, height=1, line_color="black", line_width=2))
 #show(p)
 st.bokeh_chart(p, use_container_width=True)
