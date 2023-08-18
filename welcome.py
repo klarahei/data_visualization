@@ -14,7 +14,7 @@ for i in os.listdir():
 st.write(file_name_list)
 
 df = pd.read_csv('CC1-raw.csv', sep=r';')
-st.dataframe(df)
+#st.dataframe(df)
 
 el_list = df.columns.tolist()
 x_axis = st.selectbox('select x-element', el_list)
