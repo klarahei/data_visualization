@@ -31,5 +31,13 @@ for i in range(len(select_data)):
 
 p.xgrid.visible = False
 p.ygrid.visible = False
+
+# Adding outlining lines on all sides
+p.axis.minor_tick_in = -3
+p.axis.minor_tick_out = 6
+p.xaxis.axis_line_width = 2
+p.xaxis.axis_line_color = "black"
+p.yaxis.axis_line_width = 2
+p.yaxis.axis_line_color = "black"
 #show(p)
 st.bokeh_chart(p, use_container_width=True)
