@@ -37,7 +37,7 @@ color_exp12 = (0.3, 0.1, 0.5)  # Dark purple
 
 
 labellist = select_data
-colorlist = [color_exp1, color_exp2,'pink','yellow','blue','purple','orange']
+colorlist = ['color_exp1', 'color_exp2','pink','yellow','blue','purple','orange']
 p = figure(x_axis_label = x_axis + '(wt.%)',y_axis_label = y_axis + '(wt.%)')
 for i in range(len(select_data)):
  df1 = pd.read_csv(select_data[i], sep=r';')
